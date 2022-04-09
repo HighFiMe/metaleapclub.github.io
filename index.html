@@ -3774,7 +3774,7 @@
 </div>
 <script>
   const lang = navigator.language ? navigator.language : 'en';
-  fetch('_footer?lang=' + encodeURIComponent(lang)).then(response => {
+  fetch('footer.html').then(response => {
     response.text().then(footerStr => {
       const div = document.createElement('div');
       div.innerHTML = footerStr;
